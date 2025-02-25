@@ -27,6 +27,19 @@ public class Student {
     @Column
     private Integer classroomId;
 
+    public Student(int id, String name, Integer age, String email, Integer classroomId) {
+        super();
+        this.classroomId = classroomId;
+        this.email = email;
+        this.age = age;
+        this.name = name;
+        this.id = id;
+    }
+
+    public Student() {
+        super();
+    }
+
     public int getId() {
         return id;
     }
